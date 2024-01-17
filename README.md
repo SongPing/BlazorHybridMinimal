@@ -2,7 +2,7 @@
 https://github.com/dotnet/aspnetcore/issues/52129
 
 Environment:
-
+```
 PS C:\Projects\BlazorHybridMinimal> dotnet --list-sdks
 3.1.426 [C:\Program Files\dotnet\sdk]
 8.0.101 [C:\Program Files\dotnet\sdk]
@@ -16,10 +16,14 @@ Microsoft.WindowsDesktop.App 3.1.32 [C:\Program Files\dotnet\shared\Microsoft.Wi
 Microsoft.WindowsDesktop.App 6.0.26 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
 Microsoft.WindowsDesktop.App 8.0.1 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
 PS C:\Projects\BlazorHybridMinimal>
+```
+
 
 
 Calling Counter from the Maui-App causes the error:
 
+
+```
 
 Cannot supply a component of type 'BlazorHybridMinimal.Client.Pages.Counter' because the current platform does not support the render mode 'Microsoft.AspNetCore.Components.Web.InteractiveAutoRenderMode'.
    at Microsoft.AspNetCore.Components.RenderTree.Renderer.ResolveComponentForRenderMode(Type componentType, Nullable`1 parentComponentId, IComponentActivator componentActivator, IComponentRenderMode renderMode)
@@ -43,3 +47,5 @@ Cannot supply a component of type 'BlazorHybridMinimal.Client.Pages.Counter' bec
    at Microsoft.AspNetCore.Components.RenderTree.Renderer.RenderInExistingBatch(RenderQueueEntry renderQueueEntry)
    at Microsoft.AspNetCore.Components.RenderTree.Renderer.ProcessRenderQueue()
 NotifyUnhandledException @ blazor.webview.js:1
+```
+
